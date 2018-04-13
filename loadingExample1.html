@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>loadingExample1</title>
+	<style type="text/css">	
+		html,body,*{
+			position: relative;
+			box-sizing:border-box;;
+			-moz-box-sizing:border-box;
+			-webkit-box-sizing:border-box;
+		}
+		.loading{
+			margin: 120px auto;
+			width: 100px;
+			height: 100px;
+		}
+		.loadingBox{
+			width: 100%;
+			height: 100%;
+			position: relative;
+		}
+		.loadingBox .circle{
+			position: absolute;
+			width: 30%;
+			height:30%;
+			border-radius: 100%;
+			background:white;
+			z-index: 10;
+			top: 35%;
+			left: 35%;
+		}
+		.loadingBox .bar{
+			width: 10%;
+			height: 100%;
+			opacity: 0.5;
+			position: absolute;
+			left: 47.5%;
+			top: 0;
+		}
+		.loadingBox .bar .bar-harf{
+			width: 100%;
+			height: 50%;
+			border-radius: 10px;
+			background-color: #dddddd;
+			animation: load 0.8s ease infinite;
+		}
+		@keyframes load{
+			0%{   
+		       opacity: 0.1;
+		    }   
+		    100%{   
+		       opacity: 1;  
+		    }  
+		}
+		.loadingBox .bar:first-child{
+    		transform: rotateZ(-90deg);
+		}
+		.loadingBox .bar:nth-child(2){
+    		transform: rotateZ(-45deg);	
+		}
+		.loadingBox .bar:nth-child(3){
+    		transform: rotateZ(0);
+		}
+		.loadingBox .bar:nth-child(4){
+    		transform: rotateZ(45deg);
+		}
+		.loadingBox .bar:nth-child(5){
+    		transform: rotateZ(90deg);
+		}
+		.loadingBox .bar:nth-child(6){
+    		transform: rotateZ(135deg);
+		}
+		.loadingBox .bar:nth-child(7){
+    		transform: rotateZ(180deg);
+		}
+		.loadingBox .bar:nth-child(8){
+    		transform: rotateZ(225deg);
+		}
+		.loadingBox .bar:nth-child(2) > .bar-harf{
+			animation-delay:0.1s;
+		}
+		.loadingBox .bar:nth-child(3) > .bar-harf{
+			animation-delay:0.2s;
+		}
+		.loadingBox .bar:nth-child(4) > .bar-harf{
+			animation-delay:0.3s;
+		}
+		.loadingBox .bar:nth-child(5) > .bar-harf{
+			animation-delay:0.4s;
+		}
+		.loadingBox .bar:nth-child(6) > .bar-harf{
+			animation-delay:0.5s;
+		}
+		.loadingBox .bar:nth-child(7) > .bar-harf{
+			animation-delay:0.6s;
+		}
+		.loadingBox .bar:nth-child(8) > .bar-harf{
+			animation-delay:0.7s;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="loading">
+		<div class="loadingBox">
+			<div class="bar">
+				<div class="bar-harf"></div>
+			</div>
+			<div class="bar">
+				<div class="bar-harf"></div>
+			</div>
+			<div class="bar">
+				<div class="bar-harf"></div>
+			</div>
+			<div class="bar">
+				<div class="bar-harf"></div>
+			</div>
+			<div class="bar">
+				<div class="bar-harf"></div>
+			</div>
+			<div class="bar">
+				<div class="bar-harf"></div>
+			</div>
+			<div class="bar">
+				<div class="bar-harf"></div>
+			</div>
+			<div class="bar">
+				<div class="bar-harf"></div>
+			</div>
+			<div class="circle"></div>
+		</div>
+	</div>
+</body>
+</html>
