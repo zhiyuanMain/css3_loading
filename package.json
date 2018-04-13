@@ -1,0 +1,23 @@
+{
+  "name": "css3loading",
+  "version": "1.0.0",
+  "description": "smoe loading examples",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhiyuanMain/css3_loading.git"
+  },
+  "keywords": [
+    "css3",
+    "loading"
+  ],
+  "author": "h_xingzhiyuan@163.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhiyuanMain/css3_loading/issues"
+  },
+  "homepage": "https://github.com/zhiyuanMain/css3_loading#readme"
+}
